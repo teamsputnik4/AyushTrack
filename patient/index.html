@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyushTrack</title>
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1284481603212410902/1342731388839002234/Screenshot_2025-02-22_105611.png?ex=67bab38d&is=67b9620d&hm=18827dc8ebd2944e2728bed5a283d0a9ed772b757e03a584324fab0abedc7f81&" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">      
+</head>
+<body>
+    <div class="container">
+        <h1>AyushTrack</h1>
+        <h2>Patients Information</h2>
+        <form id="userForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Date of Birth:</label>
+            <input type="date" id="age" name="age" required>
+
+            <div class="gender-details" required>
+                <!-- Radio buttons for gender selection -->
+                <input type="radio" name="gender" id="dot-1" required>
+                <input type="radio" name="gender" id="dot-2" >
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Gender:</span>
+                <div class="category">
+                    <!-- Label for Male -->
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <!-- Label for Female -->
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <!-- Label for Prefer not to say -->
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+
+            <label for="phnumber">Mobile No.:</label>
+            <input type="number" id="phnumber" name="phnumber" required>
+
+            <label for="healthData">Health Data:</label>
+            <textarea id="healthData" name="healthData" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="userMessage"></p>
+
+        <!-- Link to Go Back to the Form -->
+        <a href="../mainpages/index.html" class="view-data-link">Go Back to Form</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

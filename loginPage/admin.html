@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyushTrack</title>
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1284481603212410902/1342731388839002234/Screenshot_2025-02-22_105611.png?ex=67bab38d&is=67b9620d&hm=18827dc8ebd2944e2728bed5a283d0a9ed772b757e03a584324fab0abedc7f81&" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">      
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+                    
+</head>
+<body>
+    <section class="container forms">
+        <!-- Login Form -->
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+                <div class="tabs">
+                    <button class="tab-button active" onclick="showForm('admin', 'login')">Admin</button>
+                    <button class="tab-button" onclick="showForm('patient', 'login')">Patient</button>
+                </div>
+                <form id="admin-login-form" class="login-form">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Admin Email" class="input" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Admin Password" class="password" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot password?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button formaction="../database/dataBase.html">Login</button>
+                    </div>
+                </form>
+
+                <form id="patient-login-form" class="login-form hidden">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Patient Email" class="input" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Patient Password" class="password" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot password?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button formaction="../patient/index.html">Login</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                </div>
+            </div>
+
+                <!-- <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="#" class="field google">
+                        <img src="images/google.png" alt="" class="google-img">
+                        <span>Login with Google</span>
+                    </a>
+                </div> -->
+        </div>
+
+        <!-- Signup Form -->
+        <div class="form signup">
+            <div class="form-content">
+                <header>Signup</header>
+                <div class="tabs">
+                    <button class="tab-button active" onclick="showForm('admin', 'signup')">Admin</button>
+                    <button class="tab-button" onclick="showForm('patient', 'signup')">Patient</button>
+                </div>
+                <form id="admin-signup-form" class="signup-form">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Admin Email" class="input" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Create password" class="password" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Confirm password" class="password" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="field button-field">
+                        <button formaction="../database/dataBase.html">Signup</button>
+                    </div>
+                </form>
+
+                <form id="patient-signup-form" class="signup-form hidden">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Patient Email" class="input" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Create password" class="password" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Confirm password" class="password" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="field button-field">
+                        <button formaction="../patient/index.html">Signup</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="./script2.js"></script>
+</body>
+</html>
