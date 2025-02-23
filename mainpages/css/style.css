@@ -562,6 +562,10 @@
         opacity: 1;
     }
 
+    .mainpages img{
+      padding: 90px 0;
+    }
+
     /* home media query  */
 
     .home .row{
