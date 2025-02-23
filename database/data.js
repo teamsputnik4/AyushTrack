@@ -11,7 +11,7 @@ function displayStoredData() {
         const listItem = document.createElement('li');
         listItem.innerHTML = `
             <strong>Name:</strong> ${data.name}<br>
-            <strong>Age:</strong> ${data.age}<br>
+            <strong>Date of Birth:</strong> ${data.age}<br>
             <strong>Gender:</strong> ${data.gender}<br>
             <strong>Mobile No.:</strong> ${data.phnumber}<br>
             <strong>Health Data:</strong> ${data.healthData}
