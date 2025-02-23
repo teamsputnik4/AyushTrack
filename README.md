@@ -4,6 +4,7 @@
 
 Hospitals Data Management is a system that allows hospitals to manage and track patient information, appointments, medical history, staff details, and other key data to improve the efficiency and organization of healthcare services.
 ## URL: https://ayushtrack-hms.netlify.app/
+
 ## Features
 
 - **Patient Management**: Record and update patient details such as name, age, medical history, and treatment records.
@@ -16,8 +17,7 @@ Hospitals Data Management is a system that allows hospitals to manage and track 
 
 - **Frontend**: HTML, CSS, JavaScript 
 - **Version Control**: Git/GitHub
-
-
+- **Hosting & Deployment**: netlify
 
 ### Steps to Install
 
@@ -26,29 +26,9 @@ Hospitals Data Management is a system that allows hospitals to manage and track 
     git clone https://github.com/yourusername/hospitals-data-management.git
     ```
 
-2. Run the application:
-    ```bash
-    index.html run in go live
-    ```
+2. Run the code - first index.html open, then go to live server or copy path and paste in web browser
+
 3. Access the application at `https://ayushtrack-hms.netlify.app/` in your web browser.
-
-# Hospitals Data Management
-
-## Project Overview
-
-Hospitals Data Management is a system that allows hospitals to manage and track patient information, appointments, medical history, staff details, and other key data to improve the efficiency and organization of healthcare services.
-## URL: https://ayushtrack-hms.netlify.app/
-## Features
-
-- **Patient Management**: Record and update patient details such as name, age, medical history, and treatment records.
-- **Staff Management**: Manage hospital staff information including administrative staff.
-- **Medical Records**: Store detailed of patients.
-- **Reports**: Generate various reports, including patient statistics, appointment schedules, and staff availability.
-
-## Technologies Used
-
-- **Frontend**: HTML, CSS, JavaScript 
-- **Version Control**: Git/GitHub
 
 ## Usage
 
